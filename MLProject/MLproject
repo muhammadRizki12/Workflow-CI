@@ -1,0 +1,13 @@
+name: ObesityPredictionCI
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      penalty: { type: string, default: "l2" }
+      solver: { type: string, default: "lbfgs" }
+      C: { type: float, default: 1.0 }
+      max_iter: { type: int, default: 100 }
+      dataset: { type: string, default: "obesity_data_preprocessing.csv" }
+    command: "python modelling.py {penalty} {solver} {C} {max_iter} {dataset}"
