@@ -39,6 +39,17 @@ jobs:
       # Run as a mlflow project
       - name: Run mlflow project
         run: mlflow run MLProject --env-manager=local
+
+        # Push mlruns back to repository
+      - name: Push mlruns to repository
+        run: |
+          git config --global user.name "${{ secrets.USERNAME }}"
+          git config --global user.email "${{ secrets.EMAIL }}"
+          cp -r MLProject/mlruns ./mlruns
+          git add mlruns/
+          git diff --cached --quiet || git commit -m "Save mlruns from CI run"
+          git remote set-url origin https://x-access-token:${{ secrets.GH_PAT }}@github.com/${{ github.repository }}
+          git push origin main
  
       # Simpan Artefak
       - name: Upload MLflow artifacts
