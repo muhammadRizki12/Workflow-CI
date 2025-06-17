@@ -40,6 +40,12 @@ jobs:
       - name: Run mlflow project
         run: mlflow run MLProject --env-manager=local
 
+      - name: Upload MLflow Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: mlflow-artifacts
+          path: MLProject/mlruns
+
         # Push mlruns back to repository
       - name: Push mlruns to repository
         run: |
@@ -48,10 +54,3 @@ jobs:
           git add mlruns/
           git commit -m "Save mlruns from CI run"
           git push origin main
- 
-      # Simpan Artefak
-      - name: Upload MLflow artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: mlflow-artifacts
-          path: MLProject/mlruns
