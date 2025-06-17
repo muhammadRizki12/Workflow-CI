@@ -1,0 +1,15 @@
+artifact_uri: file:///home/runner/work/Workflow-CI/Workflow-CI/mlruns/0/79787bf4d93c4fe882fd0fbffd9c016a/artifacts
+end_time: 1750132753201
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 79787bf4d93c4fe882fd0fbffd9c016a
+run_name: bald-lark-601
+run_uuid: 79787bf4d93c4fe882fd0fbffd9c016a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750132745566
+status: 3
+tags: []
+user_id: runner
