@@ -1,0 +1,15 @@
+artifact_uri: file:///home/runner/work/Workflow-CI/Workflow-CI/mlruns/0/bc54123a9cac496b822e46c9d278c5a3/artifacts
+end_time: 1750182123329
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bc54123a9cac496b822e46c9d278c5a3
+run_name: classy-swan-209
+run_uuid: bc54123a9cac496b822e46c9d278c5a3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750182116676
+status: 3
+tags: []
+user_id: runner
