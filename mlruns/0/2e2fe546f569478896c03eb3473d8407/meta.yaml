@@ -1,0 +1,15 @@
+artifact_uri: file:///home/runner/work/Workflow-CI/Workflow-CI/mlruns/0/2e2fe546f569478896c03eb3473d8407/artifacts
+end_time: 1750132927679
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2e2fe546f569478896c03eb3473d8407
+run_name: nervous-seal-496
+run_uuid: 2e2fe546f569478896c03eb3473d8407
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750132920214
+status: 3
+tags: []
+user_id: runner
