@@ -44,7 +44,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: mlflow-artifacts
-          path: MLProject/mlruns
+          path: ./mlruns
 
         # Push mlruns back to repository
       - name: Push mlruns to repository
