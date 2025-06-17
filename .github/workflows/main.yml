@@ -63,7 +63,7 @@ jobs:
 
       - name: Build Docker Image using MLflow
         run: |
-          MODEL_URI=$(ls -td MLProject/mlruns/0/* | head -1)/artifacts/model
+          MODEL_URI=$(ls -td mlruns/0/* | head -1)/artifacts/model
           IMAGE_NAME=${{ secrets.DOCKERHUB_USERNAME }}/mlflow-model:latest
           mlflow models build-docker -m $MODEL_URI -n $IMAGE_NAME
 
